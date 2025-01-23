@@ -28,6 +28,7 @@ function App() {
     passwordRef.current?.select()
     passwordRef.current?.setSelectionRange(0, 101)
     window.navigator.clipboard.writeText(password)
+    alert("Password copied to clipboard!")
   }, [password])
 
   useEffect(() => {
